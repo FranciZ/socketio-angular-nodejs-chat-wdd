@@ -1,0 +1,15 @@
+<div
+    class="room-button"
+    ng-click="joinClick(room)"
+    ng-class="{'room-button-active':room._id === currentRoom._id}"
+    ng-repeat="room in rooms">
+    {{room.name}}
+</div>
+
+<div class="sidebar-bottom">
+    <input type="text" ng-model="room.name" class="message-input" ng-if="createRoom" style="margin-bottom:10px">
+    <div
+        class="btn btn-block"
+        ng-class="createRoom?'btn-success':'btn-primary'"
+        ng-click="createRoomClick()">{{createRoom?'Save':'Create new room'}}</div>
+</div>

@@ -1,0 +1,97 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+//@import "bower_components/bootstrap/less/theme.less";
+@import "bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "bower_components/font-awesome/fonts";
+
+/* Component LESS */
+@import "partial/main/main.less";
+@import "partial/sidebar/sidebar.less";
+@import "partial/header/header.less";
+/* Add Component LESS Above */
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.header{
+
+    width: 100%;
+    height: 60px;
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 10;
+
+}
+
+.sidebar{
+
+    width: 300px;
+    position: absolute;
+    border-right: 1px solid #aaa;
+    height: ~"calc(100vh - 60px)";
+    top: 60px;
+
+}
+
+.main{
+
+    height: ~"calc(100vh - 60px)";
+    margin-left: 300px;
+    position: relative;
+
+}
+
+.main-bottom{
+
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.message-input{
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.message-input:focus{
+
+    outline: none;
+
+}
+
+.message-container{
+
+    position: relative;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #444;
+
+    .message-content{
+
+        font-weight: 300;
+        border-bottom:1px solid #eee;
+        padding:5px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

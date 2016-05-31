@@ -1,0 +1,7 @@
+<div class="main-bottom">
+    <div class="message-container" ng-repeat="message in messages">
+        <div class="message-content">{{message.content}}</div>
+        <div class="message-time">{{message.dateCreated | date: 'dd:MM:yyyy, hh:mm:ss'}}</div>
+    </div>
+    <input type="text" ng-model="message.content" class="message-input" ng-keyup="onKeyUp($event)">
+</div>
